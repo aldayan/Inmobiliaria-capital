@@ -1,0 +1,42 @@
+.informacion{
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+
+/*-----------------------------------*/
+
+          /*REPONSIVA*/
+
+/*-----------------------------------*/
+
+
+
+
+/*------------------------------------------*/
+
+
+/*responsive 768*/
+
+
+/*------------------------------------------*/
+
+
+@media (max-width: 768px) {
+
+
+ 
+   .informacion {
+      width: auto;
+    text-align: center;
+  margin-left: -10px;
+       
+    }
+    
+  
+  
+  
+  
+  
+  }

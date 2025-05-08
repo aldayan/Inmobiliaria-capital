@@ -1,0 +1,188 @@
+
+
+/*---------------------------------------------*/
+
+
+             /*FORMULARIOS*/
+
+
+/*---------------------------------------------*/
+
+
+
+body {
+  
+    color: rgb(141, 84, 9);
+    
+    
+  
+}
+
+
+
+  
+/*-----------------------------------*/
+
+    /*CONTENEDRO DE FORMULARIO*/
+
+/*-----------------------------------*/
+
+.contenedor{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-left: 0px;
+width: 100%;
+background: rgba(141, 84, 9, 0.192);
+  
+}
+
+
+/*-----------------------------------*/
+
+             /*FOMULARIO*/
+
+/*-----------------------------------*/
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.mb-3, .text-justify{
+    padding: 20px;
+    margin: 0px;  
+    
+   
+}
+.text-justify{
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    width: 60%;
+    background: linear-gradient(white, rgba(229, 211, 190, 0.781));
+   
+    box-shadow: 0px 0px 15px rgb(141, 84, 9);
+    border-radius: 20px;
+
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+
+}
+
+.texto{
+    margin-top: 10px;
+    background: rgba(240, 203, 152, 0.582);
+    border-radius: 50px 0px 100px 0px ;
+    transition: 0.5s;
+}
+
+
+
+.Form{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+
+.form-label{
+    margin-bottom: 20px;
+}
+
+.form-control{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px 0px 100px 50px ;
+    border: solid 2px rgb(141, 84, 9);
+    color: rgb(141, 84, 9);
+    transition: 0.5s;
+    outline: none;
+}
+
+
+.form-control::placeholder{
+    color: rgb(141, 84, 9);
+
+}
+
+hr{
+    border: solid 1px ;
+    margin-left:0px;
+}
+
+.boton {
+   background: transparent;
+   border: none;
+   
+}
+
+.boton-registrar{
+    border: solid 2px rgb(141, 84, 9);
+    border-radius: 100px 25px 100px 25px;
+    background-color: rgb(141, 84, 9);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    
+}
+
+
+.selecciona{
+    width: 50%;
+    padding: 20px;
+   margin-bottom: 30px;
+}
+
+
+
+/*-----------------------------------*/
+
+          /*REPONSIVA*/
+
+/*-----------------------------------*/
+
+
+
+
+/*------------------------------------------*/
+
+
+/*responsive 768*/
+
+
+/*------------------------------------------*/
+
+
+@media (max-width: 768px) {
+
+
+
+    .contenedor{
+        width: auto;
+       margin-right: -10px;
+    }
+
+}
+     
+   
+   
+   
+   
+   

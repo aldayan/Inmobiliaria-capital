@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inmobiliaria | CAPITAL.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/style-index.css" rel="stylesheet">
+    <link href="../assets/css/style-botones.css" rel="stylesheet">
+    <link href="../assets/css/style-similares.css" rel="stylesheet">
+    <link rel="icon" href="../assets/img/logo2.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4a7e8b2fe8.js" crossorigin="anonymous"></script>
+
+<style>
+    .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 31.3rem;
+        margin: auto;
+        border-radius: 0px;
+      }
+      
+      .carousel img {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .carousel img.active {
+        display: block;
+      }
+      
+      .dots {
+        position: absolute;
+        bottom: 15px; /* posición desde abajo */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+      }
+      
+      .dots span {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .dots span.active {
+        background-color: #6d4008;
+      }
+      
+      
+</style>
+</head>
+
+<body>
+
+    <header class="menu" id="inicio">
+        <div class="container">
+
+            <h1 class="titulo-menu">
+              <a href="../index.php" class="titulo-menu">INMOBILIARIA - CAPITAL.</a>
+            </h1>
+
+
+            <nav class="lista-menu">
+            <ul class="menu-enlaces">
+                    <li class="enlaces-menu"><a href="../index.php">Inicio</a></li>
+                    <li class="enlaces-menu"><a href="../inmuebles/alquilar.php">Alquilar</a></li>
+                    <li class="enlaces-menu"><a href="../inmuebles/comprar.php">Comprar</a></li> 
+                    <li class="enlaces-menu"><a href="../login/login.php">Login</a></li> 
+                    <li class="enlaces-menu"><a href="../formularios/registrar.php">Registrarse</a></li> 
+                </ul>
+
+                <div class="menu-boton">
+                    <i class="fa-solid fa-bars"></i>
+                   </div>
+                
+            </nav>  
+
+        </div>
+    </header>
+
+    <main class="desarrollo">
+        <div class="container">
+
+            
+                <h3 class="titulo-descripcion">Descripcion del inmueble</h3>
+                
+           
+
+
+            <section class="ventana-descripcion">
+                <div class="ventana-emergente">
+        
+            
+                <div class="carrusel">
+
+                        
+                    <div class="carousel" id="carrusel">
+                        <img src="" alt="Image 1" class="slide" data-url>
+                        <img src="" alt="Image 2" class="slide" data-url2>
+                        <img src="" alt="Image 3" class="slide" data-url3>
+                        <img src="" alt="Image 4" class="slide" data-url4>
+                        <img src="" alt="Image 5" class="slide" data-url5>
+                        <img src="" alt="Image 6" class="slide" data-url6>
+                        <div class="dots" id="dots"></div>
+                      </div>
+                      
+
+                </div>
+            
+                <div class="descripcion-general">
+                
+                   <div class="encabezado-descripcion">
+            
+                     <p class="titulo-inmueble"><input class="titulo-inmueble" type="text" readonly data-nombre></p>
+                     <p class="ubicacion-inmueble"><input class="ubicacion-inmueble"  type="text" readonly data-ubicacion></p>
+                     <p class="costo-inmueble"><input class="costo-inmueble" type="text" readonly data-costo></p>
+            
+                   </div>
+            
+                     
+                  
+            
+                   <div class="caracteristicas-descripcion">
+                       
+                      <p class="caracteristica-titulo">Caracteristicas</p>
+                     
+            <div class="areas-inmueble">
+             
+            
+                     <ul class="area1">
+                             <li class="areas" id="feature-area-de-juegos">Área de Juegos</li>
+                             <li class="areas" id="feature-ascensor">Ascensor</li>
+                             <li class="areas" id="feature-balcon">Balcón / Patio</li>
+                             <li class="areas" id="feature-calentador-de-gas">Calentador de Gas</li>
+                             <li class="areas" id="feature-camaras-de-seguridad">Cámaras de Seguridad</li>
+                             <li class="areas" id="feature-cisterna">Cisterna</li>
+                      </ul>
+            
+                      <ul class="area2">
+                             <li class="areas" id="feature-cuarto-de-servicio">Cuarto de Servicio</li>
+                             <li class="areas" id="feature-entrada-privada">Entrada Privada</li>
+                             <li class="areas" id="feature-estar">Estar</li>
+                             <li class="areas" id="feature-estudio">Estudio</li>
+                             <li class="areas" id="feature-family-room">Family Room</li>
+                     </ul>
+            </div>
+                   
+            </div>
+            
+                 
+            
+            
+                   <div class="partes-inmueble">
+                        
+                        <span class="parte">
+                         <p class="parte1"><input class="acesorios" type="text" readonly data-habitacion></p>
+                         <p class="parte1">Habitaciones</p>
+                        </span>
+
+                        <span class="parte">
+                            <p class="parte2"><input class="acesorios" type="text" readonly data-baños></p>
+                            <p class="parte2">Baños</p>
+                           </span>
+               
+            
+                        <span class="parte">
+                         <p class="parte3"><input class="acesorios" type="text" readonly data-parqueos></p>
+                         <p class="parte3">Parqueos</p>
+                        </span>
+            
+                        <span class="parte">
+                         <p class="parte4"><input class="acesorios" type="text" readonly data-metros></p>
+                         <p class="parte4">Metros</p>
+                        </span>
+            
+                 
+                   </div>
+                
+                   <div class="datos-descripcion">
+                 
+                      <p class="datos-titulo">Descripcion</p>
+            
+                      <p class="datos">
+                        <textarea class="datos-inmueble" type="text" name="descripcion" id="descripcion" readonly data-descripcion cols="10" rows="20"></textarea>
+                         </p>
+                   </div>
+            
+                </div>
+            
+        
+                    <div class="ofertas-similares">
+                        <div class="similares-container">
+                            <h3 class="titulo-similares">Similares</h3>
+                    </div>
+                  </div>
+            
+               </div>
+            </section>
+
+  
+
+            <section class="contactos " id="contactos ">
+                <div class="container ">
+                    <h2 class="titulo-contacto ">Conocenos y Contactanos</h2>
+
+                    <div class="informacion-contacto">
+
+                        <nav class="lista-contacto">
+                            <img src="../assets/img/logo2.png" class="img-contacto" alt="logo">
+
+                            <ul class="lista-informacion">
+                                <li class="list-info "><a class="preguntas" href="../informacion/informacion.html">Quienes Somos</a></li>
+                                <li class="list-info "><a class="preguntas" href="../informacion/informacion.html">Políticas de privacidad</a></li>
+                                <li class="list-info "><a class="preguntas" href="../informacion/informacion.html">Programa de fidelidad</a></li>
+                                <li class="list-info "><a class="preguntas" href="../informacion/informacion.html">Nuestras Tiendas</a></li>
+                                <li class="list-info "><a class="preguntas" href="../informacion/informacion.html">Quiero ser Franquiciado</a></li>
+                                <li class="list-info "><a class="preguntas" href="../informacion/informacion.html">Anuncie Aquí</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="contacto">
+
+                            <div class="titulos-contacto ">
+                                <h3 class=" contacto-subtexto ">Hablanos</h3>
+                            </div>
+
+                            <form action="https://formsubmit.co/aldayanaavila02@gmail.com" method="POST" class="contacto-form" id="form" name="form">
+                                <input class="contacto-input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                                <input class="contacto-input" type="email" id="email" name="email" placeholder="E-mail" required>
+                                <input class="contacto-input" type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                                <textarea class="contacto-input" rows="5" type="text" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea> 
+                                <button type="submit " id="enviar " class="contacto-boton ">Enviar mensaje</button>
+                                <br>
+                                <p class="alerta " id="alerta "></p>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        
+        <p>Hecho por
+            <a href="https://">Aldayan A. Avila Dotel</a> 
+        </p>
+        <a href=""></a>
+        <a href=""></a>
+
+    </footer>
+
+
+   
+    <script type="module" src="../assets/js/descripcion-producto.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script type="module" src="../assets/js/similares.js"></script>
+    <script src="../assets/js/carrusel.js"></script>
+</body>
+
+</html>

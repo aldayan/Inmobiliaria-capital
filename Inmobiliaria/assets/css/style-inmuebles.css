@@ -1,0 +1,137 @@
+
+/*---------------------------------------------*/
+
+
+      /*IMNUEBLES ALQUILAR Y COMPRAR*/
+
+
+/*---------------------------------------------*/
+
+
+
+
+/*---------------------------------------------*/
+
+
+              /*TITULOS*/
+
+
+/*---------------------------------------------*/
+
+
+.titulo-alquiler, .titulo-ventas{
+font-size: 40px;
+
+}
+
+
+/*---------------------------------------------*/
+
+
+        /*CAJA DE ZONAS*/
+
+
+/*---------------------------------------------*/
+
+
+.zonas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---------------------------------------------*/
+
+
+        /*ALQUILAR*/
+
+
+/*---------------------------------------------*/
+
+
+.buscador-pizarra-alquilar .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;  
+    background: linear-gradient(white, rgba(229, 211, 190, 0.781));
+    margin-top: 100px;
+}
+
+.presentacion-titulo-alquiler{
+    font-size: 60px;
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  
+}
+
+/*---------------------------------------------*/
+
+
+        /*VENTA*/
+
+
+/*---------------------------------------------*/
+
+
+.buscador-pizarra-venta .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;  
+    background: linear-gradient(white, rgba(229, 211, 190, 0.781));
+    margin-top: 100px;
+}
+
+.presentacion-titulo-venta{
+    font-size: 60px;
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+/*-----------------------------------*/
+
+          /*REPONSIVA*/
+
+/*-----------------------------------*/
+
+
+
+
+/*------------------------------------------*/
+
+
+/*responsive 768*/
+
+
+/*------------------------------------------*/
+
+@media (max-width: 768px) {
+
+
+    .buscador-pizarra-alquilar .container,
+     .buscador-pizarra-venta .container{
+        margin-right: -10px;
+        width: auto;
+        margin-top: 85px;
+    }
+    
+.presentacion-titulo-alquiler, 
+.presentacion-titulo-venta{
+    font-size: 40px;
+    text-align: center;
+    width: auto;
+    margin-bottom: 40px;
+ 
+}
+
+
+
+
+}
